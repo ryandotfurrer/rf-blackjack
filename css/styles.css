@@ -1,0 +1,36 @@
+.wrapper {
+	display: grid;
+	grid-template-columns:
+		[full-start] 1fr [wrapper-start]
+		minmax(0, 70rem) [wrapper-end] 1fr [full-end];
+
+	/* Optional gap */
+	column-gap: var(--pad, 1rem);
+}
+
+.wrapper > * {
+	grid-column: wrapper;
+}
+
+.wrapper > .full-width {
+	grid-column: full;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background: #212121;
+	color: #f5f5f5;
+}
+
+button {
+	color: #212121;
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
