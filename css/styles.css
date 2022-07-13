@@ -42,7 +42,7 @@ button {
 }
 
 #new-card-btn {
-	/* display: none; */
+	display: none;
 	background: lightgreen;
 }
 
