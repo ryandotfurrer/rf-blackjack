@@ -37,9 +37,9 @@ function newGame() {
 	cards = [cardOne, cardTwo];
 	updatePlayerCards();
 	updateTotal();
-	hideElement(gameDesc);
 	hideElement(newGameBtn);
 	showElement(newCardBtn);
+	message.style.color = "var(--light-color)";
 }
 
 function updatePlayerCards() {
@@ -58,10 +58,12 @@ function updateTotal() {
 function displayMessage() {
 	if (totalScore > 21) {
 		message.textContent = `You lost!`;
+		message.style.color = "tomato";
 		hideElement(newCardBtn);
 		showElement(newGameBtn);
 	} else if (totalScore === 21) {
 		message.textContent = `You got Blackjack, congrats!`;
+		message.style.color = "lightgreen";
 		hideElement(newCardBtn);
 		showElement(newGameBtn);
 	} else {

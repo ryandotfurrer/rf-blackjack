@@ -35,15 +35,33 @@ button {
 	padding: 1rem 0.5rem;
 }
 
+.ctr-txt {
+	text-align: center;
+}
+
+.inner-container {
+	margin: 0 auto;
+	margin-top: 3rem;
+	width: 66%;
+}
+
+.title {
+	margin-bottom: 1rem;
+}
+
+#game-desc {
+	margin: 0 auto;
+}
+
 .btn-container {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	margin-top: 3rem;
 }
 
 #new-card-btn {
 	display: none;
-	background: lightgreen;
+	background: lightblue;
 }
 
 #new-game-btn {
